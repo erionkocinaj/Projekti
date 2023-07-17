@@ -1,0 +1,129 @@
+
+    <head>
+        <style>
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+          nav {
+            display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          background-color: #6194d5;
+          justify-content: space-between;
+          overflow: auto;
+          position: sticky;
+         top: 0;
+         z-index: 40;
+          }
+          ul li {
+            position: relative;
+            margin: 0 20px;
+            list-style: none;
+            display: inline-block;
+            padding: 14px;
+            font-size: 17px;
+          }
+          ul li a {
+            text-decoration: none;
+            cursor: pointer;
+            color: rgb(255, 255, 255);
+          }
+          ul li a:hover {
+            background-color: rgb(129, 123, 123);
+          }
+          .dropdown {
+  display: inline-block;
+  position: relative;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  display: block;
+  color: #000000;
+  padding: 5px;
+  text-decoration: none;
+}
+.dropdown-content a:hover {
+  color: #FFFFFF;
+  background-color: #00A4BD;
+}
+
+#img1 { visibility: hidden; }
+#img2 { visibility: hidden; }
+#img3 { visibility: hidden; }
+.dropdown {
+  background-color: #00A4BD;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
+}
+.notat_img {
+  display: flex;
+  align-items: center;
+}
+        </style>
+      </head>
+    
+      <body>
+        <nav>
+          <img
+            src="https://i.ibb.co/jrMqfwj/aatbio-com-image-export-Jul-5-2023.png"
+            width="60px"
+            height="60px"
+            id="logo"
+            alt="Logo image"
+            style="margin-left: 10px;"
+          />
+          <ul class="navigationbar">
+            <li>Notat e nxensve</a></li>
+          </ul>
+        </nav>
+        <h2> Ne kete pjese te projektit kam bere nje sistem ku mundemi te shikjome notat e nxenseve ne shkolle</h2>
+        <div class="dropdown">
+            <button>Zgjidh nxenesin</button>
+            <div class="dropdown-content">
+            <a id="b1">Erion</a>
+            <a id="b2">Rron</a>
+            <a id="b3">Ermal</a>
+            </div>
+          </div>
+          
+      </body>
+      <section>
+      <div class="notat_img">
+      <img id="img1" src="https://i.ibb.co/f9RQ4DN/clipboard-image-806be322211666ea.jpg">
+      <img id="img2" src="https://i.ibb.co/f9RQ4DN/clipboard-image-806be322211666ea.jpg">
+      <img id="img3" src="https://i.ibb.co/f9RQ4DN/clipboard-image-806be322211666ea.jpg">
+    </div>
+</section>
+      <script>
+        document.getElementById("b1").onclick = function() {
+    document.getElementById("img1").style.visibility = "visible";
+    document.getElementById("img2").style.visibility = "collapse";
+    document.getElementById("img3").style.visibility = "collapse";
+}
+document.getElementById("b2").onclick = function() {
+    document.getElementById("img2").style.visibility = "visible";
+    document.getElementById("img1").style.visibility = "collapse";
+    document.getElementById("img3").style.visibility = "collapse";
+}
+document.getElementById("b3").onclick = function() {
+    document.getElementById("img3").style.visibility = "visible";
+    document.getElementById("img2").style.visibility = "collapse";
+    document.getElementById("img1").style.visibility = "collapse";
+}
+
+
+      </script>
+      <h1 >Punoi: Erion Kocinaj</h1>
+    </html>
